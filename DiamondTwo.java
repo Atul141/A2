@@ -9,14 +9,14 @@ public class DiamondTwo {
     {
         int num=Integer.parseInt(args[0]);
         DiamondOne.isosceles(num);
-        centered(num-1);
+        centered(num-1,1);
     }
-    public static void centered(int num)
+    public static void centered(int num,int k)
     {
         int i,j;
         for(i=num;i>0;i--)
         {
-            for(j=num;j>=i-1;j--)
+            for(j=num;j>=i-k;j--)
                 System.out.print(" ");
 
             for(j=0;j<(i*2-1);j++)
