@@ -5,7 +5,7 @@ package A2;
  */
 public class Fizz {
 
-    public static void main(String[] args)
+    public static void main(String[] arg)
     {
         fizzbuzz();
     }
