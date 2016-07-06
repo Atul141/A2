@@ -9,10 +9,14 @@ public class DiamondThree {
     {
         int num=Integer.parseInt(args[0]);
         DiamondOne.isosceles(num-1);
+        printName(num);
+        System.out.println();
+        DiamondTwo.centered(num-1,0);
+    }
+    public static void printName(int num)
+    {
         for(int i=0;i<num-2;i++)
             System.out.print(" ");
         System.out.print("Atul");
-        System.out.println();
-        DiamondTwo.centered(num-1,0);
     }
 }

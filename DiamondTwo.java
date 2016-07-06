@@ -13,6 +13,7 @@ public class DiamondTwo {
     }
     public static void centered(int num,int k)
     {
+
         int i,j;
         for(i=num;i>0;i--)
         {
