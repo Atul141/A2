@@ -14,12 +14,8 @@ public class PrimeFactors {
         ArrayList<Integer> prime = new ArrayList<Integer>();
         int num = Integer.parseInt(args[0]);
 
-        while (num % 2 == 0) {
-            prime.add(2);
 
-            num /= 2;
-        }
-        for (int i = 3; i <=num;i++) {
+        for (int i = 2; i <=num;i++) {
             while (num % i == 0) {
                 prime.add(i);
 
