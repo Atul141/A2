@@ -12,8 +12,8 @@ public class PrimeFactors {
 
     public static void main(String[] args) {
         ArrayList<Integer> prime = new ArrayList<Integer>();
-        //int num = Integer.parseInt(args[0]);
-        int num=54;
+        int num = Integer.parseInt(args[0]);
+
         while (num % 2 == 0) {
             prime.add(2);
 
