@@ -11,11 +11,15 @@ import static java.lang.StrictMath.sqrt;
 public class PrimeFactors {
 
     public static void main(String[] args) {
-        ArrayList<Integer> prime = new ArrayList<Integer>();
         int num = Integer.parseInt(args[0]);
+        findPrimeFactors(num);
+    }
+
+    public static void findPrimeFactors(int num) {
+        ArrayList<Integer> prime = new ArrayList<Integer>();
 
 
-        for (int i = 2; i <=num;i++) {
+        for (int i = 2; i <= num; i++) {
             while (num % i == 0) {
                 prime.add(i);
 
@@ -23,6 +27,7 @@ public class PrimeFactors {
             }
 
         }
+
         System.out.println(prime);
     }
 }
