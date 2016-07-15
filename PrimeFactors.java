@@ -24,6 +24,7 @@ public class PrimeFactors {
                 prime.add(i);
 
                 num /= i;
+                
             }
 
         }
